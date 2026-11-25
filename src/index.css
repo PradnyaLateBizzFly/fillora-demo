@@ -1,0 +1,45 @@
+/* ─── Global Reset & Base ─────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary:        #4f46e5;
+  --primary-dark:   #4338ca;
+  --primary-light:  #eef2ff;
+  --secondary:      #64748b;
+  --bg:             #f1f5f9;
+  --surface:        #ffffff;
+  --border:         #cbd5e1;
+  --border-focus:   #4f46e5;
+  --text:           #1e293b;
+  --text-muted:     #64748b;
+  --error:          #dc2626;
+  --error-bg:       #fef2f2;
+  --success:        #16a34a;
+  --success-bg:     #f0fdf4;
+  --radius:         8px;
+  --radius-lg:      16px;
+  --shadow:         0 1px 3px rgba(0,0,0,.08), 0 4px 24px rgba(0,0,0,.06);
+  --transition:     150ms ease;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
